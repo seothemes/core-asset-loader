@@ -22,7 +22,7 @@ namespace D2\Core;
  *      AssetLoader::SCRIPTS => [
  *         [
  *            AssetLoader::HANDLE   => 'generico',
- *            AssetLoader::URL      => AssetLoader::path( 'assets/js/generico.js' ),
+ *            AssetLoader::URL      => AssetLoader::path( '/assets/js/generico.js' ),
  *            AssetLoader::DEPS     => [ 'jquery' ],
  *            AssetLoader::VERSION  => CHILD_THEME_VERSION,
  *            AssetLoader::FOOTER   => true,
@@ -191,6 +191,6 @@ class AssetLoader extends Core {
 			}
 		}
 
-		return esc_url( trailingslashit( get_stylesheet_directory_uri() ) . $path );
+		return esc_url( get_stylesheet_directory_uri() . $path );
 	}
 }

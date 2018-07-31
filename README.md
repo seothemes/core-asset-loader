@@ -23,7 +23,7 @@ $d2_assets = [
      AssetLoader::SCRIPTS => [
         [
            AssetLoader::HANDLE   => 'generico',
-           AssetLoader::URL      => AssetLoader::path( 'assets/js/generico.js' ),
+           AssetLoader::URL      => AssetLoader::path( '/assets/js/generico.js' ),
            AssetLoader::DEPS     => [ 'jquery' ],
            AssetLoader::VERSION  => CHILD_THEME_VERSION,
            AssetLoader::FOOTER   => true,
@@ -59,7 +59,7 @@ return [
 
 ### Automatic loading of minified files. 
 
-A static function `AssetLoader::path()` is available to optionally generate the full path to your asset. Pass in the path to your asset relative to the theme directory, such as `AssetLoader::path( 'assets/js/generico.js' )`. If a minified version of the file exists in the same directory (and `SCRIPT_DEBUG` is not set to `true`), then the minified file will be used automatically.
+A static function `AssetLoader::path()` is available to optionally generate the full path to your asset. Pass in the path to your asset relative to the theme directory, such as `AssetLoader::path( '/assets/js/generico.js' )`. If a minified version of the file exists in the same directory (and `SCRIPT_DEBUG` is not set to `true`), then the minified file will be used automatically.
 
 ## Load the component
 
