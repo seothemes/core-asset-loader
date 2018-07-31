@@ -1,0 +1,26 @@
+{
+  "name": "d2/core-asset-loader",
+  "type": "library",
+  "description": "Load theme scripts and stylesheets through configuration.",
+  "homepage": "https://d2themes.com/",
+  "keywords": [
+    "WordPress",
+    "wordpress-theme-development"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Craig Simpson",
+      "homepage": "https://craigsimpson.scot",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "D2\\Core\\": "src/"
+    }
+  },
+  "require": {
+    "d2/core": "^0.1.0"
+  }
+}
