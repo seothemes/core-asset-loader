@@ -61,7 +61,7 @@ namespace D2\Core;
 class AssetLoader extends Core {
 
 	const SCRIPTS = 'scripts';
-	const STYLES = 'scripts';
+	const STYLES = 'styles';
 	const HANDLE = 'handle';
 	const URL = 'src';
 	const DEPS = 'deps';
